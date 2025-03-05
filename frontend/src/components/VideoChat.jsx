@@ -194,7 +194,7 @@ const VideoChat = () => {
 
     const initiateCall = async (targetSocketId) => {
         try {
-            const pc = new RTCPeerConnection(getWebRTCConfig());
+            const pc = new RTCPeerConnection(getWebRTCconfig());
             peerConnectionRef.current = pc;
 
             const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
@@ -231,7 +231,7 @@ const VideoChat = () => {
 
         try {
             console.log('offer received for call')
-            const pc = new RTCPeerConnection(getWebRTCConfig());
+            const pc = new RTCPeerConnection(getWebRTCconfig());
             peerConnectionRef.current = pc;
 
             const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
