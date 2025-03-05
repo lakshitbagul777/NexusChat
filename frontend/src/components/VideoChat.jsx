@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import CallButton from "./CallButton";
-import { getWebRTCConfig } from "../utils/webRTCConfig";
+import { getWebRTCconfig } from "../utils/webRTCconfig";
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
